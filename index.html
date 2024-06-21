@@ -9,9 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/d5664282ad.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="java.js">
 </head>
-<body>
+ <body>
   <nav class="navbar sticky-top navbar-dark bg-primary navbar-expand-sm">
     <div class="container-fluid">
       <a href="#" class=" active navbar-brand">Fun Tickets</a>
@@ -42,34 +43,73 @@
             <a class="nav-link text-light" href="#">Tickets</a>
           </li>
           <!--search button form-->
-          <li class="d-flex justify-content-center mb-1">
-            <form class="form-inline navbar-light">
-              <input class="form-control mr-sm-1 col-md-8" type="search" placeholder="Search for: ticket, city, event" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+          <li class="d-flex justify-content-center nav-item">
+            <div class="form-inline navbar-light">
+              <input class="form-control mr-1 col-md-8" type="search" placeholder="Search for: ticket, city, event" aria-label="Search">
+              <button class="btn btn-light text-primary" type="submit">Search</button>
+            </div>
           </li>
           <!-- Button trigger modal -->
           <li class=" nav-item mr-2">
-            <button type="button" class="btn btn-primary nav-link text-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <button type="button" class="btn btn-primary nav-link text-light btn-round" data-toggle="modal" data-target="#loginModal">
               <i class="fa-regular fa-user h5"></i>
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header bg-primary text-dark">
-                              <h5 class="modal-title" id="loginModalLabel">Login / Register</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              ...
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                          </div>
+             <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
+              <div class="modal-dialog modal-dialog-right" role="document">
+                <div class="modal-content">
+                  <!--modal header title-->
+                  <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title text-primary" id="exampleModalLabel">Login</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <!--modal body part-->
+                  <div class="modal-body">
+                    <!--Login and social networks-->
+                    <div class="d-flex flex-column text-center">
+                      <div class="text-center text-primary delimiter">with your social network</div>
+                      <!--social media-->
+                      <div class="d-flex justify-content-center social-buttons">
+                        <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Google" href="#">
+                          <i class="fa-brands fa-google"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook" href="#">
+                          <i class="fab fa-facebook"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter" href="#">
+                          <i class="fab fa-twitter"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin" href="#">
+                          <i class="fab fa-linkedin"></i>
+                        </button>
+                      </div>
+                      <!--login with email form-->
+                      <form>
+                        <div class="text-center text-primary delimiter">Or</div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email1"placeholder="Your email address...">
                         </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                        </div>
+                        <div class="form-group">
+                          <p>
+                            <input type="checkbox" aria-label="Checkbox">
+                            Remember me
+                            <button type="button" class="btn btn-success btn-round" data-bs-dismiss="modal">Login</button>
+                          </p>
+                          
+                        </div>
+                      </form>
+                    </div> 
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">Not a member yet? <a href="#a" class="text-success"> Sign Up</a>.</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </li>
         </ul>
@@ -99,7 +139,7 @@
               <img src="images/girl1.png" class="rounded-circle m-2" height="100" width="100" alt="A photo of a young woman looking in to the camera">
               <blockquote class="blockquote">
                 <p> OMG, I was so happy I used my bonus points to get a free comdey ticket. I was so amazed how first it worked.</p>
-                <figcaption class="blockquote-footer">Jane Doe <cite>~Munich</cite></figcaption>
+                <footer class="blockquote-footer">Jane Doe <cite>~Munich</cite></footer>
               </blockquote>
             </div>
           </div>
@@ -108,7 +148,7 @@
               <img src="images/man.png" class="rounded-circle m-2" height="100" width="100" alt="A photo of a man looking in to the camera">
               <blockquote class="blockquote">
                 <p>The information was straight forward, I was happy to finally get the ticket without searching the all internet.</p>
-                <figcaption class="blockquote-footer">John Doe <cite>~Berlin.</cite></figcaption>
+                <footer class="blockquote-footer">John Doe <cite>~Berlin.</cite></footer>
               </blockquote>
             </div>
           </div>
@@ -118,7 +158,7 @@
                 <img src="images/girl.png" class="rounded-circle m-2" height="100" width="100" alt="A photo of a  young woman facing sideway in to the camera">
                 <blockquote class="blockquote">
                   <p>I liked how it is catagoriesed because it was much easier to get what I wanted and to see the next up coming events.</p>
-                  <figcaption class="blockquote-footer">Jane John Doe <cite>~Cologne.</cite></figcaption>
+                  <footer class="blockquote-footer">Jane John Doe <cite>~Cologne.</cite></footer>
                 </blockquote>
               </div>
             </div>
