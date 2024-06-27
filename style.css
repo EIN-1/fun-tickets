@@ -69,3 +69,21 @@
   .signup-section {
     padding: 0.3rem 0rem;
   }
+
+  .pics {
+  }
+
+  .carousel-inner{
+    position: relative;
+    left: 8vw;
+  }
+
+  .carousel-control-prev-icon{
+    position: relative;
+    background-color: blue;
+  }
+
+  .carousel-control-next-icon{
+    position: relative;
+    background-color: blue;
+  }
