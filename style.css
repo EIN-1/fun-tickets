@@ -37,6 +37,11 @@ body{
 .nav-link:hover::after{
     opacity: 1;
 }
+ 
+/** navbar the border is still on **/
+ .navbar .navbar-toggler {
+  border: 0;
+}
 
 /** modal**/
 
@@ -92,8 +97,13 @@ body{
     position: relative;
     background-color: blue;
   }
+  .quotes-container{
+  
+  }
    /* this didn't work so am going to use html */
-  .features-container {
-    align-content:center;
-    
+  .events-container {
+    align-content:center; 
+  }
+  .footer-container{
+  
   }

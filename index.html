@@ -19,7 +19,8 @@
 
 </head>
 <body>
-  <nav class="navbar sticky-top navbar-dark bg-primary navbar-expand-sm justify-content-between">
+  <!--navbar-->
+  <nav class="navbar-containter navbar sticky-top navbar-dark bg-primary navbar-expand-sm justify-content-between">
     <div class="container-fluid">
       <a href="#" class=" active navbar-brand">Fun Tickets</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false">
@@ -34,9 +35,9 @@
             </a>
             <!--dropdown of events-->
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Comedy</a></li>
-              <li><a class="dropdown-item active" href="#" aria-current="true">Sports</a></li>
-              <li><a class="dropdown-item" href="#">leisure</a></li>
+              <li><a class="dropdown-item" href="#comedy">Comedy</a></li>
+              <li><a class="dropdown-item active" href="#sports" aria-current="true">Sports</a></li>
+              <li><a class="dropdown-item" href="#leisure">leisure</a></li>
             </ul>
           </li>
           <!--/navbar events dropdown.-->
@@ -243,12 +244,13 @@
     </section>
 
     <!--quotes-->
-    <section class="quotes-container mx-auto">
-        <div class=" d-flex justify-content-center bg-light text-primary">
-          <h2 class="text-uppercase">Quotes</h2>
-        </div>
+    <section class="quotes-container">
+      <div class=" d-flex justify-content-center bg-light text-primary">
+        <h2 class="text-uppercase">Quotes</h2>
+      </div>
 
-        <div class="row d-flex justify-content-center bg-primary text-dark">
+        <div class="quote1-container">
+          <div class="row d-flex justify-content-center bg-primary text-dark">
           <div class="card mt-2 mb-2 ml-2 mr-2 col-md-6" style="max-width: 540px;">
             <div class="row no-gutters ml-4 mt-4">
               <div class="col-md-4">
@@ -293,19 +295,19 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
- 
     </section>
 
-    <!--features-->
-    <section class="features-container">
+    <!--Events-->
+    <section class="events-container">
       <div class=" d-flex justify-content-center bg-light text-primary">
         <h2 class="text-uppercase">Events</h2>
       </div>
       <div class="row justify-content-center bg-secondary text-dark ">
         <!--comedy-->
         <div class="comedy-container">
-          <h3 class="d-flex justify-content-center bg-light text-primary">Comedy</h3>
+          <h3 id="comedy" class="d-flex justify-content-center bg-light text-primary">Comedy</h3>
           <div class="row">
             <div class="col-12 col-md-4">
               <div class="card mt-2 mb-2 ml-2 mr-2">
@@ -376,7 +378,7 @@
         </div>
         <!--sports-->
         <div class="sports-container">
-          <h3 class="d-flex justify-content-center bg-light text-primary">Sports</h3>
+          <h3 id="sports" class="d-flex justify-content-center bg-light text-primary">Sports</h3>
           <div class="row">
             <div class="col-12 col-md-4">
               <div class="card mt-2 mb-2 ml-2 mr-2">
@@ -447,7 +449,7 @@
         </div>
         <!--leisure-->
         <div class="leisure-container">
-          <h3 class="d-flex justify-content-center bg-light text-primary">Leisure</h3>
+          <h3 id="leisure" class="d-flex justify-content-center bg-light text-primary">Leisure</h3>
           <div class="row">
             <div class="col-12 col-md-4">
               <div class="card mt-2 mb-2 ml-2 mr-2">
@@ -520,7 +522,7 @@
     </section>
   </article>
     <!--Footer-->
-    <footer class=" footer-container text-center text-lg-start text-light bg-primary">
+    <footer class="footer-container container-fluid text-center text-lg-start text-light bg-primary">
       <!-- Grid container -->
       <div class="container p-1 pb-0">
         <!-- Section links 1 -->
@@ -531,11 +533,11 @@
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h3 class="fw-bolder">Fun Tickets</h3>
               <h4>Let's connect here.</h4>
-              <a class="text-light m-1" href="https://www.facebook.com/"><i class="fa-brands fa-facebook h1"></i></a>
-              <a class="text-light m-1" href="https://x.com/?lang=en"><i class="fa-brands fa-x-twitter h1"></i></a>
-              <a class="text-light m-1" href="https://www.instagram.com/"><i class="fa-brands fa-instagram h1"></i></a>
-              <a class="text-light m-1" href="https://www.tiktok.com/login"><i class="fa-brands fa-tiktok h1"></i></a>
-              <a class="text-light m-1" href="#"><i class="fa-brands fa-youtube h1"></i></a>
+              <a class="text-light m-1"  target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook h1"></i></a>
+              <a class="text-light m-1"  target="_blank" href="https://x.com/?lang=en"><i class="fa-brands fa-x-twitter h1"></i></a>
+              <a class="text-light m-1"  target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram h1"></i></a>
+              <a class="text-light m-1"  target="_blank" href="https://www.tiktok.com/login"><i class="fa-brands fa-tiktok h1"></i></a>
+              <a class="text-light m-1"  target="_blank" href="#"><i class="fa-brands fa-youtube h1"></i></a>
             </div>
             <!--/social media links-->
         
@@ -551,10 +553,10 @@
             <!--Payment grid column-->
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h4>Payment Methods</h4>
-              <a class="text-light m-1" href="#"><i class="fa-brands fa-cc-visa h1"></i></a>
-              <a class="text-light m-1" href="#"><i class="fa-brands fa-cc-mastercard h1"></i></a>
-              <a class="text-light m-1" href="#"><i class="fa-brands fa-cc-stripe h1"></i></a>
-              <a class="text-light m-1" href="#"><i class="fa-brands fa-cc-paypal h1"></i></a>
+              <a class="text-light m-1"  target="_blank" href="#"><i class="fa-brands fa-cc-visa h1"></i></a>
+              <a class="text-light m-1"  target="_blank" href="#"><i class="fa-brands fa-cc-mastercard h1"></i></a>
+              <a class="text-light m-1"  target="_blank" href="#"><i class="fa-brands fa-cc-stripe h1"></i></a>
+              <a class="text-light m-1"  target="_blank" href="#"><i class="fa-brands fa-cc-paypal h1"></i></a>
             </div>
             <!--/Payment grid column-->
           
